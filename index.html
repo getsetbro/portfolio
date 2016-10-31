@@ -35,14 +35,14 @@
 </article>
 
 <footer><h1>•</h1>&copy; rights reserverd.<h1>•</h1></footer>
-<div class="modal-backdrop"></div>
+<!-- <div class="modal-backdrop"></div> -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
 //var prev = getElementsByClassName('.preview');
 //var prev = getElementsByClassName('.preview');
 
 $('.preview').on('click',function(e){
-	$('.modal-backdrop').show();
+	// $('.modal-backdrop').show();
 	$('body').addClass('modal-open');
 	$(this).prev().addClass('active');
 });
@@ -50,7 +50,7 @@ $('.preview').on('click',function(e){
 $('.close').on('click',function(e){
 	$(this).closest('.modal').removeClass('active');
 	$('body').removeClass('modal-open');
-	$('.modal-backdrop').hide();
+	// $('.modal-backdrop').hide();
 });
 </script>
 </body>
