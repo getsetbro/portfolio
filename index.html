@@ -30,17 +30,7 @@ header{text-align: center;}
 footer{text-align: center;}
 
 section{}
-section .preview{
-	padding:5em 2em 0;
-	cursor:pointer;
-	color:#fff;
-	height: 355px;
-	overflow: hidden;
-	text-align: center;
-}
-.preview img{
-	border:15px solid #fff;
-}
+
 body>section:nth-of-type(6n+1) .preview, body>section:nth-of-type(6n+1) .modal-header{background-color:#0080ed}
 body>section:nth-of-type(6n+2) .preview, body>section:nth-of-type(6n+2) .modal-header{background-color:#7bb83f}
 body>section:nth-of-type(6n+3) .preview, body>section:nth-of-type(6n+3) .modal-header{background-color:#f35518}
@@ -48,7 +38,21 @@ body>section:nth-of-type(6n+4) .preview, body>section:nth-of-type(6n+4) .modal-h
 body>section:nth-of-type(6n+5) .preview, body>section:nth-of-type(6n+5) .modal-header{background-color:#7bb83f}
 body>section:nth-of-type(6n+6) .preview, body>section:nth-of-type(6n+6) .modal-header{background-color:#f35518}
 
-
+.preview{
+	padding:5em 2em 0;
+	cursor:pointer;
+	color:#fff;
+	height: 355px;
+	overflow: hidden;
+	text-align: center;
+	transition: padding-top 0.2s;
+}
+.preview img{
+	border:15px solid #fff;
+}
+.preview:hover{
+	padding-top: 3em;
+}
 </style>
 
 </head>
@@ -72,103 +76,7 @@ body>section:nth-of-type(6n+6) .preview, body>section:nth-of-type(6n+6) .modal-h
 		</div>
 	</div>
 	<div class="preview">
-		<h2>hi.</h2>
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-	</div>
-</section>
-<section>
-	<div class="modal">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div>
-				<div class="modal-body">
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="preview">
-		<h2>hi.</h2>
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-	</div>
-</section>
-<section>
-	<div class="modal">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div>
-				<div class="modal-body">
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="preview">
-		<h2>hi.</h2>
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-	</div>
-</section>
-<section>
-	<div class="modal">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div>
-				<div class="modal-body">
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="preview">
-		<h2>hi.</h2>
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-	</div>
-</section>
-<section>
-	<div class="modal">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div>
-				<div class="modal-body">
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="preview">
-		<h2>hi.</h2>
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-	</div>
-</section>
-<section>
-	<div class="modal">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div>
-				<div class="modal-body">
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="preview">
-		<h2>hi.</h2>
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-	</div>
-</section>
-<section>
-	<div class="modal">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div>
-				<div class="modal-body">
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="preview">
-		<h2>hi.</h2>
+		<h2>Title</h2>
 		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
 	</div>
 </section>
