@@ -5,14 +5,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Portfolio</title>
-<link rel="stylesheet" href="./css/modal.css#1"/>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<link rel="stylesheet" href="./css/modal.css"/>
 <style>
 body{
-	font: 15px/1 sans-serif;
+	font: 15px/1 'Open Sans',sans-serif;
 	font-weight: 300;
 	position: relative;
 	margin:0;
 	color:#444;
+}
+h1,h2,h3,h4{
+	font-weight: 300
 }
 body * {box-sizing: border-box;}
 .clearfix:after{
@@ -31,27 +35,42 @@ footer{text-align: center;}
 
 section{}
 
-body>section:nth-of-type(6n+1) .preview, body>section:nth-of-type(6n+1) .modal-header{background-color:#0080ed}
-body>section:nth-of-type(6n+2) .preview, body>section:nth-of-type(6n+2) .modal-header{background-color:#7bb83f}
-body>section:nth-of-type(6n+3) .preview, body>section:nth-of-type(6n+3) .modal-header{background-color:#f35518}
-body>section:nth-of-type(6n+4) .preview, body>section:nth-of-type(6n+4) .modal-header{background-color:#0080ed}
-body>section:nth-of-type(6n+5) .preview, body>section:nth-of-type(6n+5) .modal-header{background-color:#7bb83f}
-body>section:nth-of-type(6n+6) .preview, body>section:nth-of-type(6n+6) .modal-header{background-color:#f35518}
+body>section:nth-of-type(6n+1) .preview, body section:nth-of-type(6n+1) .modal-header{background-color:#0080ed}
+body>section:nth-of-type(6n+2) .preview, body section:nth-of-type(6n+2) .modal-header{background-color:#7bb83f}
+body>section:nth-of-type(6n+3) .preview, body section:nth-of-type(6n+3) .modal-header{background-color:#f35518}
+body>section:nth-of-type(6n+4) .preview, body section:nth-of-type(6n+4) .modal-header{background-color:#0080ed}
+body>section:nth-of-type(6n+5) .preview, body section:nth-of-type(6n+5) .modal-header{background-color:#7bb83f}
+body>section:nth-of-type(6n+6) .preview, body section:nth-of-type(6n+6) .modal-header{background-color:#f35518}
 
 .preview{
-	padding:5em 2em 0;
 	cursor:pointer;
 	color:#fff;
+	text-align: center;
+}
+.project .preview{
+	padding:5em 2em 0;
+	transition: padding-top 0.2s;	
 	height: 355px;
 	overflow: hidden;
-	text-align: center;
-	transition: padding-top 0.2s;
 }
-.preview img{
+.project .preview img{
 	border:15px solid #fff;
 }
-.preview:hover{
+.project .preview:hover{
 	padding-top: 3em;
+}
+
+.row {
+  margin: 8px;
+}
+.grid{
+	width:25%;
+	float:left;
+	  position: relative;
+  min-height: 1px;
+}
+.grid .preview{
+	padding: 8px;
 }
 </style>
 
@@ -64,142 +83,23 @@ body>section:nth-of-type(6n+6) .preview, body>section:nth-of-type(6n+6) .modal-h
 	<h3>item | item | item</h3>
 	<h1>•</h1>
 </header>
-<section>
-	<div class="modal">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div>
-				<div class="modal-body">
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="preview">
-		<h2>Title</h2>
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-	</div>
-</section>
+<section class="project"><div class="modal"><div class="modal-dialog"><div class="modal-content"><div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div><div class="modal-body"><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></div></div></div><div class="preview"><h2>Title</h2><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></section>
+<section class="project"><div class="modal"><div class="modal-dialog"><div class="modal-content"><div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div><div class="modal-body"><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></div></div></div><div class="preview"><h2>Title</h2><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></section>
+<section class="project"><div class="modal"><div class="modal-dialog"><div class="modal-content"><div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div><div class="modal-body"><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></div></div></div><div class="preview"><h2>Title</h2><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></section>
+<section class="project"><div class="modal"><div class="modal-dialog"><div class="modal-content"><div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div><div class="modal-body"><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></div></div></div><div class="preview"><h2>Title</h2><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></section>
+<section class="project"><div class="modal"><div class="modal-dialog"><div class="modal-content"><div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div><div class="modal-body"><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></div></div></div><div class="preview"><h2>Title</h2><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></section>
+<section class="project"><div class="modal"><div class="modal-dialog"><div class="modal-content"><div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div><div class="modal-body"><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></div></div></div><div class="preview"><h2>Title</h2><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></section>
 
-<section>
-	<div class="modal">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div>
-				<div class="modal-body">
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="preview">
-		<h2>Title</h2>
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-	</div>
-</section>
-
-<section>
-	<div class="modal">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div>
-				<div class="modal-body">
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="preview">
-		<h2>Title</h2>
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-	</div>
-</section>
-
-<section>
-	<div class="modal">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div>
-				<div class="modal-body">
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="preview">
-		<h2>Title</h2>
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-	</div>
-</section>
-
-<section>
-	<div class="modal">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div>
-				<div class="modal-body">
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="preview">
-		<h2>Title</h2>
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-	</div>
-</section>
-
-<section>
-	<div class="modal">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div>
-				<div class="modal-body">
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="preview">
-		<h2>Title</h2>
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-	</div>
-</section>
-
-<section>
-	<div class="modal">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div>
-				<div class="modal-body">
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="preview">
-		<h2>Title</h2>
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-	</div>
-</section>
-
-<section>
-	<div class="modal">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div>
-				<div class="modal-body">
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="preview">
-		<h2>Title</h2>
-		<img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/>
-	</div>
-</section>
-
+<article class="clearfix row">
+<section class="grid"><div class="modal"><div class="modal-dialog"><div class="modal-content"><div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div><div class="modal-body"><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></div></div></div><div class="preview"><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></section>
+<section class="grid"><div class="modal"><div class="modal-dialog"><div class="modal-content"><div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div><div class="modal-body"><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></div></div></div><div class="preview"><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></section>
+<section class="grid"><div class="modal"><div class="modal-dialog"><div class="modal-content"><div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div><div class="modal-body"><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></div></div></div><div class="preview"><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></section>
+<section class="grid"><div class="modal"><div class="modal-dialog"><div class="modal-content"><div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div><div class="modal-body"><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></div></div></div><div class="preview"><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></section>
+<section class="grid"><div class="modal"><div class="modal-dialog"><div class="modal-content"><div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div><div class="modal-body"><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></div></div></div><div class="preview"><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></section>
+<section class="grid"><div class="modal"><div class="modal-dialog"><div class="modal-content"><div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div><div class="modal-body"><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></div></div></div><div class="preview"><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></section>
+<section class="grid"><div class="modal"><div class="modal-dialog"><div class="modal-content"><div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div><div class="modal-body"><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></div></div></div><div class="preview"><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></section>
+<section class="grid"><div class="modal"><div class="modal-dialog"><div class="modal-content"><div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div><div class="modal-body"><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></div></div></div><div class="preview"><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></section>
+</article>
 
 <footer>
 	<h1>•</h1>
