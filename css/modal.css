@@ -5,16 +5,15 @@
 
 .modal {
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  top:50%;
+  bottom:50%;
+  right: 10px;
+  left: 10px;
   z-index: 1050;
 
   overflow: hidden;
   outline: 0;
-  height: 0;
-  transition: height 0.5s;
+  transition: all 0.4s;
 }
 
 .modal-open .modal {
@@ -22,7 +21,10 @@
   overflow-y: auto;
 }
 .modal-open .active {
-  height: 100vh
+  top: 0%;
+  bottom: 0%;
+  right: 0;
+  left: 0;
 }
 
 
