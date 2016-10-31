@@ -23,7 +23,6 @@
 .modal-open .active {
   top: 0%;
   bottom: 0%;
-
 }
 
 
@@ -45,7 +44,20 @@
   border-bottom: 1px solid #e5e5e5;
   color:#fff;
 }
-.close{cursor: pointer;font-size:3em;}
+.close{
+  cursor: pointer;
+  font-size: 59px;
+  line-height: 33px;
+  margin-top: 0;
+  transform: rotate(0deg);
+  transition: transform 0.25s;
+  transform-origin: 17px 18px;
+  /* height: 34px; */
+  width: 33px;
+}
+.close:hover{
+   transform: rotate(365deg); 
+}
 .modal-body {
   position: relative;
   padding: 15px
