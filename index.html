@@ -6,76 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Portfolio</title>
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
-<link rel="stylesheet" href="./css/modal.css"/>
-<style>
-body{
-	font: 15px/1 'Open Sans',sans-serif;
-	font-weight: 300;
-	position: relative;
-	margin:0;
-	color:#444;
-}
-h1,h2,h3,h4{font-weight: 300}
-h1{font-size: 60px;font-weight: bold}
-h2{font-size: 50px; margin-top:0;}
-h3{font-size: 40px}
-h4{font-size: 30px;margin:5px 0 0;}
-body * {box-sizing: border-box;}
-.clearfix:after{
-	clear:both;
-	content: ' ';
-	display: block;
-	height: 0;
-	font-size:0;
-	line-height: 0;
-	overflow: hidden;
-}
-.pull-right{float:right;}
-img{max-width: 100%}
-header{text-align: center;}
-footer{text-align: center;}
-
-section{}
-
-body>section:nth-of-type(6n+1) .preview, body section:nth-of-type(6n+1) .modal-header{background-color:#0080ed}
-body>section:nth-of-type(6n+2) .preview, body section:nth-of-type(6n+2) .modal-header{background-color:#7bb83f}
-body>section:nth-of-type(6n+3) .preview, body section:nth-of-type(6n+3) .modal-header{background-color:#f35518}
-body>section:nth-of-type(6n+4) .preview, body section:nth-of-type(6n+4) .modal-header{background-color:#0080ed}
-body>section:nth-of-type(6n+5) .preview, body section:nth-of-type(6n+5) .modal-header{background-color:#7bb83f}
-body>section:nth-of-type(6n+6) .preview, body section:nth-of-type(6n+6) .modal-header{background-color:#f35518}
-
-.preview{
-	cursor:pointer;
-	color:#fff;
-	text-align: center;
-}
-.project .preview{
-	padding:5em 2em 0;
-	transition: padding-top 0.2s;	
-	height: 355px;
-	overflow: hidden;
-}
-.project .preview img{
-	border:15px solid #fff;
-}
-.project .preview:hover{
-	padding-top: 3em;
-}
-
-.row {
-  margin: 8px;
-}
-.grid{
-	width:25%;
-	float:left;
-	  position: relative;
-  min-height: 1px;
-}
-.grid .preview{
-	padding: 8px;
-}
-</style>
-
+<link rel="stylesheet" href="./css/styles.css"/>
 </head>
 <body>
 <header>
@@ -103,25 +34,23 @@ body>section:nth-of-type(6n+6) .preview, body section:nth-of-type(6n+6) .modal-h
 <section class="grid"><div class="modal"><div class="modal-dialog"><div class="modal-content"><div class="clearfix modal-header"><span class="pull-right close">&times;</span><h4>title</h4></div><div class="modal-body"><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></div></div></div><div class="preview"><img src="https://cdn.pastemagazine.com/www/articles/pokemon_essay_main.jpg" alt=""/></div></section>
 </article>
 
-<footer>
-	<h1>•</h1>
-	&copy; rights reserverd.
-	<h1>•</h1>
-</footer>
+<footer><h1>•</h1>&copy; rights reserverd.<h1>•</h1></footer>
 <div class="modal-backdrop"></div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
 <script>
+//var prev = getElementsByClassName('.preview');
+//var prev = getElementsByClassName('.preview');
+
 $('.preview').on('click',function(e){
-$('.modal-backdrop').show();
-$('body').addClass('modal-open');
-$(this).prev().addClass('active');
+	$('.modal-backdrop').show();
+	$('body').addClass('modal-open');
+	$(this).prev().addClass('active');
 });
 
 $('.close').on('click',function(e){
-$(this).closest('.modal').removeClass('active');
-$('body').removeClass('modal-open');
-$('.modal-backdrop').hide();
+	$(this).closest('.modal').removeClass('active');
+	$('body').removeClass('modal-open');
+	$('.modal-backdrop').hide();
 });
 </script>
 </body>
