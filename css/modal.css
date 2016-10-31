@@ -25,11 +25,11 @@
   height: 100vh
 }
 
+  .close{cursor: pointer;font-size:2em;}
 
 .modal-dialog {
   position:relative;
   width:auto;
-  margin: 10px;
 }
 
 .modal-content {
@@ -39,9 +39,14 @@
   background-clip: padding-box;
   border-radius: .3rem;
   outline: 0;
-  min-height: calc(100vh - 20px);
-
+  min-height: 100vh;
 }
+.modal-header {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+  color:#fff;
+}
+
 .modal-body {
   position: relative;
   padding: 15px
