@@ -1,6 +1,8 @@
 {
   "name": "Portfolio",
   "tagline": "Portifino",
-  "body": "### Welcome.\r\n",
-  "note": "Don't delete this file! It's used internally to help with page regeneration."
+  "version": "1.0.0",
+  "description": "Portfolio site",
+  "author": "thewanted",
+  "license": "ISC"
 }

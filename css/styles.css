@@ -1,106 +1,51 @@
-body{
-  font: 15px/1 'Open Sans',sans-serif;
-  font-weight: 300;
-  position: relative;
-  margin:0;
-  color:#444;
-}
-h1,h2,h3,h4{font-weight: 300}
-h1{font-size: 60px;font-weight: bold}
-h2{font-size: 50px; margin-top:0;}
-h3{font-size: 40px}
-h4{font-size: 30px;margin:5px 0 0;}
-body * {box-sizing: border-box;}
-.clearfix:after{
-  clear:both;
-  content: ' ';
-  display: block;
-  height: 0;
-  font-size:0;
-  line-height: 0;
-  overflow: hidden;
-}
-.pull-right{float:right;}
-img{
-  min-width: 70%;
-  max-width: 100%
-}
-header{text-align: center;}
-nav{text-align: center;}
-footer{text-align: center;}
 
-
-.modal-backdrop {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1040;
-  background-color: #000;
-  display: none;
-  opacity: 0.5;
-}
-.modal-open {overflow: hidden}
-.modal {
-  position: fixed;
-  top:50%;
-  bottom:50%;
-  right: 0;
-  left: 0;
-  z-index: 1050;
-  overflow: hidden;
-  outline: 0;
-  transition: all 0.4s;
-}
-.modal-open .modal {
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-.modal-open .active {
-  top: 0%;
-  bottom: 0%;
-}
-.modal-dialog {
-  position:relative;
-  width:auto;
-}
-.modal-content {
-  position: relative;
-  background-color: #fff;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  outline: 0;
-  min-height: 100vh;
-}
-.modal-header {
-  padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
-  color:#fff;
-}
-.close{
-  cursor: pointer;
-  font-size: 59px;
-  line-height: 33px;
-  margin-top: 0;
-  transform: rotate(0deg);
-  transition: transform 0.25s;
-  transform-origin: 17px 18px;
-  /* height: 34px; */
-  width: 33px;
-}
-.close:hover{
-   transform: rotate(365deg); 
-}
-.modal-body {
-  position: relative;
-  padding: 15px;
+header{
+  padding: 75px 0 45px;
   text-align: center;
 }
-.project-article{
-  width:550px;
-  margin:auto;
-  text-align: left
+
+header h1{
+  text-transform: uppercase;
+  color: #d9d9d9;
+  margin:0;
+  font-weight: 800;
+  letter-spacing: -3px
+}
+header p{
+  margin:0 0 15px;
+}
+.profile-title{
+  text-transform: uppercase;
+  color:#8d8d8d;
+  font-weight: bold
+}
+.profile-links a{
+  padding: 0 15px;
+  font-size: 14px
+}
+.thumbcircle{
+  border-radius:50%;
+  border: 5px solid #d9d9d9;
+  background-color:#d9d9d9;
+  height:99px;
+  width: 99px;
+  display: inline-block;
+}
+.thumbcircle img{
+  border-radius:50%;  
+}
+.vertline{
+  margin: -3px 0 -7px;
+  font-size: 0;
+  line-height: 0;
+}
+.vertline:after{
+  content: ' ';
+  display: inline-block;
+  width: 1px;
+  height:50px;
+  background-color:#d9d9d9;
+  margin-right: -4px;
 }
 
 
