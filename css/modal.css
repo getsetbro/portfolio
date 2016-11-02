@@ -43,8 +43,12 @@
 }
 .modal-header {
   padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
   color:#fff;
+}
+.modal-header h4{
+  font-size: 40px;
+  margin: 0;
+  line-height: 1;
 }
 .close{
 	cursor: pointer;
@@ -68,4 +72,7 @@
   max-width:550px;
   margin:auto;
   text-align: left
+}
+.project-article h3{
+  font-size: 30px
 }
