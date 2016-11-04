@@ -40,18 +40,14 @@ a:focus {
   outline-offset: -2px
 }
 
-h3,h4,h5,h6{font-weight: 300}
-h2{
-  color: #000;
-  font-size: 40px;
-  letter-spacing: -2px;
-  line-height: 1;
-  margin:80px 0;
-}
-img{
-  min-width: 70%;
-  max-width: 100%
-}
+h2,h3,h4,h5,h6{font-family: inherit;font-weight: 400;line-height: 1.1;color: inherit;}
+h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{font-weight: 400;line-height: 1;font-size: 75%}
+h2 {font-size: 50px;margin: 0}
+h3 {font-size: 30px}
+h4 {font-size: 24px}
+h5 {font-size: 18px}
+h6 {font-size: 16px}
+p {margin: 0 0 10px}
 
 footer{
   font-size: 10px;
