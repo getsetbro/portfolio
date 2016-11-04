@@ -1,9 +1,8 @@
-.Exp{
-  height: 388px;
-}
-.Exp:not(.active){
-  cursor: pointer;
-}
+.Exp{height: 388px;}
+.Exp:not(.full){cursor: pointer;}
+
+.Exp:nth-child(odd) .Exp-header{background: #989898}
+.Exp:nth-child(even) .Exp-header{background: #c1c1c1}
 .Exp:nth-of-type(1) .Exp-header{background-color:#0080ed}
 .Exp:nth-of-type(2) .Exp-header{background-color:#7cb940}
 .Exp:nth-of-type(3) .Exp-header{background-color:#939393}
@@ -11,46 +10,38 @@
 .Exp:nth-of-type(5) .Exp-header{background-color:#989898}
 .Exp:nth-of-type(6) .Exp-header{background-color:#c1c1c1}
 
-.Exp-modal {
-  outline: 0;
-  overflow: hidden;
-  height: 100%
-}
-.Exp.active .Exp-modal {
+.Exp-modal {}
+.Exp.full .Exp-modal {
   position: fixed;
   top:0;
+  right:0;
   bottom:0;
-  right: 0;
-  left: 0;
+  left:0;
   z-index: 1050;
-  overflow: hidden;
-  overflow-x: hidden;
-  overflow-y: auto;  
+
 }
 .Exp-dialog {
-  left:0;
+  background-color: #fff;
+  top:0;
   right:0;
-}
-.Exp.active .Exp-dialog {
-  position: absolute;
+  left:0;
+  height: 388px;
+  overflow: hidden;
+  overflow-x: hidden;
 }
 
-.Exp-content {
-  position: relative;
-  background-color: #fff;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  outline: 0;
-  min-height: 100vh;
+.Exp.full .Exp-dialog {
+  position: absolute;
+  overflow-y: auto;
 }
+
 .Exp-header {
   padding: 15px 15px 0;
   color:#fff;
   position: relative;
   height: 388px;
 }
-.Exp.active .Exp-header {
-  height: 300px;
+.Exp.full .Exp-header {
 }
 .Exp-close{
   cursor: pointer;
@@ -62,10 +53,10 @@
   top:20px;
   right: 20px;
   transform: rotate(0deg);
-  transition: transform 0.5s;
+  transition: transform 1.5s;
   transform-origin: 16px 21px;
 }
-.Exp:not(.active) .Exp-close{display: none;}
+.Exp:not(.full) .Exp-close{display: none;}
 .Exp-close:hover{transform: rotate(1080deg);}
 
 .Exp-title{
@@ -86,15 +77,15 @@
 .Exp-hero{
   width:100%;
   max-width: 800px;
-  -webkit-transition: -webkit-transform .3s;
-  -o-transition: -o-transform .3s;
-  transition: transform .3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  transition: transform 0.3s;
 }
-.Exp:not(.active) .Exp-hero{
+.Exp:not(.full) .Exp-hero{
   transform: translateY(-200px);
   width:60%;
 }
-.Exp:not(.active):hover .Exp-hero{
+.Exp:not(.full):hover .Exp-hero{
   transform: translateY(-230px);
 }
 
